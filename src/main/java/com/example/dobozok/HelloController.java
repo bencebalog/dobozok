@@ -27,6 +27,7 @@ public class HelloController {
             lt[s][o].setLayoutY(10+s*64);
             lt[s][o].setOnMouseEntered(e-> lt[ss][oo].setStyle("-fx-background-color:lightgreen;"));
             lt[s][o].setOnMouseExited(e-> lt[ss][oo].setStyle("-fx-background-color:white;"));
+            lt[s][o].setOnMousePressed(e-> katt(ss,oo));
             lt[s][o].setGraphic(new ImageView(new Image(getClass().getResourceAsStream("null.png"))));
             timer = new AnimationTimer() {
                 @Override
@@ -45,6 +46,9 @@ public class HelloController {
             int rand = (int)(Math.random()*10+1);
 
         }
+    }
+    private void katt(int s,int o){
+
     }
 
 }
